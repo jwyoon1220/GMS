@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>로션맨의 광고</title>
     <script>
-        let button_prs = 10;
+        let button_prs = 1000;
         function reduce() {
             button_prs--;
-            if (button_prs == 0) {
+            document.title = button_prs + "번 남았습니다."
+            if (button_prs <= 0) {
                 location.href = "/GMS/movie.html"    
             }
             
