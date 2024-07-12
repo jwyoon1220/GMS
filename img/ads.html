@@ -8,7 +8,7 @@
         let button_prs = 1000;
         function reduce() {
             button_prs--;
-            document.title = button_prs + "번 남았습니다."
+            document.getElementById("a").innerText = button_prs + "번 남았습니다."
             if (button_prs <= 0) {
                 location.href = "/GMS/movie.html"    
             }
@@ -18,5 +18,6 @@
 </head>
 <body>
     <button onclick="reduce()">눌러!</button>
+    <div id="a">null</div>
 </body>
 </html>
